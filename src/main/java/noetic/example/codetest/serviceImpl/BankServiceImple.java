@@ -3,7 +3,6 @@ package noetic.example.codetest.serviceImpl;
 import noetic.example.codetest.config.LoadBankData;
 import noetic.example.codetest.constant.Constant;
 import noetic.example.codetest.dto.BankDto;
-import noetic.example.codetest.exceptions.BankAccountNotFound;
 import noetic.example.codetest.exceptions.BankException;
 import noetic.example.codetest.model.BankData;
 import noetic.example.codetest.serviceInterfaces.BankService;

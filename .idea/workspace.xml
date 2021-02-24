@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b2bcda8-2d29-4df8-b921-c00253c19775" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/noetic/example/codetest/exceptions/BankAccountNotFound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/noetic/example/codetest/exceptions/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/noetic/example/codetest/exceptions/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/noetic/example/codetest/serviceImpl/BankServiceImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/noetic/example/codetest/serviceImpl/BankServiceImple.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,17 +70,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CodetestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="codetest" />
       <extension name="coverage">
@@ -138,7 +129,8 @@
       <workItem from="1607836505618" duration="510000" />
       <workItem from="1609998098504" duration="1240000" />
       <workItem from="1610089004209" duration="26000" />
-      <workItem from="1614093380356" duration="12465000" />
+      <workItem from="1614093380356" duration="13496000" />
+      <workItem from="1614157370689" duration="1759000" />
     </task>
     <task id="LOCAL-00001" summary="exception handling in DTOs">
       <created>1589702342519</created>
@@ -161,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614105913046</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="removed exception">
+      <created>1614105977010</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614105977010</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,24 +169,25 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="exception handling in DTOs" />
     <MESSAGE value="trabeya first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="trabeya first commit" />
+    <MESSAGE value="removed exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed exception" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/noetic/example/codetest/serviceImpl/BankServiceImple.java</url>
-          <line>44</line>
+          <line>43</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/noetic/example/codetest/serviceImpl/BankServiceImple.java</url>
-          <line>71</line>
+          <line>70</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/noetic/example/codetest/serviceImpl/BankServiceImple.java</url>
-          <line>85</line>
+          <line>84</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

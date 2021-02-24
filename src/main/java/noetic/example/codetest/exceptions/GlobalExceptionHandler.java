@@ -30,11 +30,6 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         return new ResponseEntity<>(new ExceptionResponse("Employee Is Already has a department",404,ex), HttpStatus.NOT_FOUND);
     }
 
-    @ExceptionHandler(value = BankAccountNotFound.class)
-    public ResponseEntity<Object> BankAccNotFound(Throwable ex) {
-        return new ResponseEntity<>(new ExceptionResponse("Bank Account not Found",404,null), HttpStatus.NOT_FOUND);
-    }
-
     @ExceptionHandler(value = BankException.class)
     public ResponseEntity<Object> BankExceptionCommon(Throwable ex) {
         return new ResponseEntity<>(new ExceptionResponse(ex.getMessage(),400,null), HttpStatus.BAD_REQUEST);
