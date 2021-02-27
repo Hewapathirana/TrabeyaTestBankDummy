@@ -1,6 +1,5 @@
 package noetic.example.codetest.controller;
 
-import noetic.example.codetest.dto.EmployeeDto;
 import noetic.example.codetest.dto.TransactionDto;
 import noetic.example.codetest.serviceImpl.MapValidationErrorService;
 import noetic.example.codetest.serviceInterfaces.BankService;

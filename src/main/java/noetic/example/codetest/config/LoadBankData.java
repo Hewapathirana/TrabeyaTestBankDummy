@@ -5,7 +5,11 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import java.util.HashMap;
-
+/**
+ * Created by DS hewapathirana.
+ * Date:25/02/2020
+ * Time: 7:45 PM
+ */
 @Component
 public class LoadBankData {
     public static HashMap<String, BankData> bankDataMap = new HashMap<>();

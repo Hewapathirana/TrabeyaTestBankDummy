@@ -8,7 +8,11 @@ import noetic.example.codetest.model.BankData;
 import noetic.example.codetest.serviceInterfaces.BankService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
+/**
+ * Created by DS hewapathirana.
+ * Date:25/02/2020
+ * Time: 7:45 PM
+ */
 @Service
 public class BankServiceImple implements BankService {
     @Autowired

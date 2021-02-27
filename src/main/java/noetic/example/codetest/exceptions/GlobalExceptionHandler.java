@@ -8,27 +8,11 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 /**
  * Created by DS hewapathirana.
- * Date: 9/22/2019
+ * Date:25/02/2020
  * Time: 7:45 PM
  */
 @RestControllerAdvice
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
-
-    @ExceptionHandler(value = DepartmentNotFoundException.class)
-    public ResponseEntity<Object> DeptIdNotFoundException(Throwable ex) {
-        return new ResponseEntity<>(new ExceptionResponse("Department not found.Please add a Department first",404,ex), HttpStatus.NOT_FOUND);
-    }
-
-
-    @ExceptionHandler(value = EmployeeNotFoundException.class)
-    public ResponseEntity<Object> EmployeeNotFound(Throwable ex) {
-        return new ResponseEntity<>(new ExceptionResponse("Employee Not Found",404,ex), HttpStatus.NOT_FOUND);
-    }
-
-    @ExceptionHandler(value = EmployeeAlreadyInADepartment.class)
-    public ResponseEntity<Object> EmployeeAlreadyInADepartment(Throwable ex) {
-        return new ResponseEntity<>(new ExceptionResponse("Employee Is Already has a department",404,ex), HttpStatus.NOT_FOUND);
-    }
 
     @ExceptionHandler(value = BankException.class)
     public ResponseEntity<Object> BankExceptionCommon(Throwable ex) {

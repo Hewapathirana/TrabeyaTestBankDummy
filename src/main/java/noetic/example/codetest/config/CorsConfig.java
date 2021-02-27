@@ -8,8 +8,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * Created by DS hewapathirana.
- * Date: 9/22/2019
- * Time: 10:21 AM
+ * Date:25/02/2020
+ * Time: 7:45 PM
  */
 @Configuration
 @EnableWebMvc

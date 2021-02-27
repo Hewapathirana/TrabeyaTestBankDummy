@@ -1,7 +1,6 @@
 package noetic.example.codetest.serviceInterfaces;
 
 import noetic.example.codetest.dto.BankDto;
-import noetic.example.codetest.dto.EmployeeDto;
 import noetic.example.codetest.exceptions.BankException;
 
 /**

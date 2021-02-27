@@ -8,7 +8,11 @@ import org.springframework.validation.FieldError;
 
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * Created by DS hewapathirana.
+ * Date:25/02/2020
+ * Time: 9:45 PM
+ */
 @Service
 public class MapValidationErrorService {
     public ResponseEntity<?> MapValidationService(BindingResult result){
