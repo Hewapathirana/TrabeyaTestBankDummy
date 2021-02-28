@@ -6,8 +6,11 @@ import noetic.example.codetest.dto.BankDto;
 import noetic.example.codetest.exceptions.BankException;
 import noetic.example.codetest.model.BankData;
 import noetic.example.codetest.serviceInterfaces.BankService;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 /**
  * Created by DS hewapathirana.
  * Date:25/02/2020
@@ -15,6 +18,8 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class BankServiceImple implements BankService {
+    private static final Logger LOGGER = LoggerFactory.getLogger(BankServiceImple.class);
+
     @Autowired
     private LoadBankData loadBankData;
     @Autowired
@@ -45,6 +50,8 @@ public class BankServiceImple implements BankService {
     @Override
     public String fundTransfer(String senderAccount, String receiverAccount,
                                boolean isOwnFundTransfer, String amount) throws BankException {
+
+        LOGGER.info(Constant.LOGGER_DEBUG_STRING, "Is Own Fund Transfer =  ", isOwnFundTransfer);
         if(!isOwnFundTransfer && receiverAccount == null){
             throw new BankException("please provide recerver account details");
         }
@@ -63,7 +70,9 @@ public class BankServiceImple implements BankService {
                     addAmount(senderAccount,amount);
                 }
         }
+
         else {
+            LOGGER.error(Constant.LOGGER_ERROR_STRING, "Is Own Fund Transfer = " + isOwnFundTransfer, "error occured while transaction processing");
             throw  new BankException("error occured while transaction processing");
         }
 
@@ -80,6 +89,7 @@ public class BankServiceImple implements BankService {
              return isAdd = true;
          }
          catch (BankException b){
+             LOGGER.error(Constant.LOGGER_ERROR_STRING, "addAmount account ", account);
              return isAdd;
          }
      }
@@ -94,6 +104,7 @@ public class BankServiceImple implements BankService {
             return isDeduct = true;
         }
         catch (BankException b){
+            LOGGER.error(Constant.LOGGER_ERROR_STRING, "deductAmount account ", account);
             return isDeduct;
         }
     }

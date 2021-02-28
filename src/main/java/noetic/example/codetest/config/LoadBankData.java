@@ -15,7 +15,7 @@ public class LoadBankData {
     public static HashMap<String, BankData> bankDataMap = new HashMap<>();
 
     @PostConstruct
-    private void postConstruct() {
+    public void postConstruct() {
 
 
         BankData bankData1 = new BankData();

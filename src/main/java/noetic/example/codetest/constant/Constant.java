@@ -17,5 +17,9 @@ public class Constant {
 
 //  error messages
     public final static String BANK_ACCOUNT_NOT_FOUND = "Bank Account not Found";
+
+    // Logs
+    public static final String LOGGER_DEBUG_STRING = "Message: {}, Result: {}";
+    public static final String LOGGER_ERROR_STRING = "Error Response Internal: {}, Error: {}";
 }
 
